@@ -156,11 +156,12 @@ p {
 /* Top_content
 ---------------------------------*/
 .hero_section {
-    /* position: relative; */
     padding-top: 72px;
     z-index: 5;
 }
-
+/* #hero_section{
+    min-height: 100%;
+} */
 
 /* Services
 ---------------------------------*/
@@ -224,6 +225,12 @@ color:#fff;
 
 }
 
+.embed{
+    width: 100% !important;
+    height: 100% !important;
+    
+}
+
 img {
     max-width: 100%;
 }
@@ -285,6 +292,9 @@ background-position-y: 70px;
 	top: 6px;
 }
 
+.imgRound {
+    border: 1px solid;
+}
 /* Team
 ---------------------------------*/
 #team{
@@ -302,6 +312,15 @@ background-position-y: 70px;
 
 .centered {
 text-align: center;
+}
+
+.centered h4{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.rt-box{
+    text-align: center;
 }
 #aboutUs {
     padding: 110px 0;
@@ -537,6 +556,14 @@ text-align: center;
     margin-bottom: 70px;
 }
 
+@media (min-width: 1200px) {
+
+.portfolio {
+    min-height: 300px !important;
+}
+
+}
+
 /*
    Media Queries
 --------------------------- */
@@ -622,6 +649,15 @@ margin: 0px;
 
 
 @media (max-width: 480px){ 
+html, body {width: auto!important; overflow-x: hidden!important} 
+
+.portfolio .col-5{
+    display: block !important;
+    max-width: 95% !important;
+    flex: 0 0 95% !important;
+}
+
+
 .navStyle {
 float: left;
 width: 100%; 
